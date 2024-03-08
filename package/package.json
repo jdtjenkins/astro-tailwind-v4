@@ -1,21 +1,22 @@
 {
-  "name": "package-name",
-  "version": "0.0.0",
-  "description": "TODO:",
+  "name": "astro-tailwind-v4",
+  "version": "0.0.2",
+  "description": "Adds Astro support for Tailwind v4",
   "author": {
-    "email": "TODO:",
-    "name": "TODO:",
-    "url": "TODO:"
+    "email": "support@futurethemes.io",
+    "name": "Jacob Jenkins - @jdtjenkins",
+    "url": "https://github.com/jdtjenkins"
   },
+  "type": "module",
   "license": "MIT",
   "keywords": [
     "astro-integration",
     "astro-component",
     "withastro",
     "astro",
-    "TODO:"
+    "tailwind"
   ],
-  "homepage": "TODO:",
+  "homepage": "https://github.com/jdtjenkins/astro-tailwind-v4",
   "publishConfig": {
     "access": "public"
   },
@@ -24,11 +25,12 @@
     ".": "./src/index.ts"
   },
   "scripts": {},
-  "type": "module",
   "peerDependencies": {
     "astro": "^4.0.0"
   },
   "dependencies": {
-    "astro-integration-kit": "^0.5.0"
+    "@tailwindcss/vite": "4.0.0-alpha.6",
+    "astro-integration-kit": "^0.5.0",
+    "tailwindcss": "4.0.0-alpha.6"
   }
 }

@@ -1,27 +1,23 @@
-# `package-name`
+# astro-tailwind-v4
 
-This is an [Astro integration](https://docs.astro.build/en/guides/integrations-guide/) that TODO:description
+This is an [Astro integration](https://docs.astro.build/en/guides/integrations-guide/) that adds Tailwind v4 support to your Astro project.
 
 ## Usage
-
-### Prerequisites
-
-TODO:
 
 ### Installation
 
 Install the integration **automatically** using the Astro CLI:
 
 ```bash
-pnpm astro add package-name
+pnpm astro add astro-tailwind-v4
 ```
 
 ```bash
-npx astro add package-name
+npx astro add astro-tailwind-v4
 ```
 
 ```bash
-yarn astro add package-name
+yarn astro add astro-tailwind-v4
 ```
 
 Or install it **manually**:
@@ -29,32 +25,36 @@ Or install it **manually**:
 1. Install the required dependencies
 
 ```bash
-pnpm add package-name
+pnpm add astro-tailwind-v4
 ```
 
 ```bash
-npm install package-name
+npm install astro-tailwind-v4
 ```
 
 ```bash
-yarn add package-name
+yarn add astro-tailwind-v4
 ```
 
 2. Add the integration to your astro config
 
 ```diff
-+import integration from "package-name";
++import AstroTailwindV4 from "astro-tailwind-v4";
 
 export default defineConfig({
   integrations: [
-+    integration(),
++    AstroTailwindV4(),
   ],
 });
 ```
 
 ### Configuration
 
-TODO:configuration
+#### applyBaseStyles
+
+default: `true`
+
+Disable if you don't want default Tailwind base styling
 
 ## Contributing
 
@@ -79,8 +79,9 @@ You can now edit files in `package`. Please note that making changes to those fi
 
 ## Licensing
 
-[MIT Licensed](https://github.com/TODO:/blob/main/LICENSE). Made with ❤️ by [TODO:](https://github.com/TODO:).
+[MIT Licensed](https://github.com/jdtjenkins/astro-tailwind-v4/blob/main/LICENSE). Made with ❤️ by [jdtjenkins](https://github.com/jdtjenkins).
 
 ## Acknowledgements
 
-TODO:
+Astro
+Tailwind
