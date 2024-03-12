@@ -11,7 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.4.10",
+    "astro": "^4.5.2",
     "astro-tailwind-v4": "workspace:*"
   },
   "devDependencies": {
