@@ -10,7 +10,7 @@ export default defineIntegration({
 	optionsSchema: OptionsSchema,
 	setup: ({ name, options }) => {
 		return {
-			"astro:config:setup": ({ logger, addVitePlugin, injectScript }) => {
+			"astro:config:setup": ({ logger, addVitePlugin, injectScript, updateConfig }) => {
 				const { resolve } = createResolver(import.meta.url);
 
 				const plugins = tailwindcss();
@@ -18,6 +18,14 @@ export default defineIntegration({
 				for (const plugin of plugins) {
 					addVitePlugin(plugin);
 				}
+
+				updateConfig({
+					vite: {
+						css: {
+							transformer: 'lightningcss'
+						}
+					}
+				})
 
 				if (options.applyBaseStyles) {
 					injectScript("page-ssr", `import "${resolve("./base.css")}";`);
