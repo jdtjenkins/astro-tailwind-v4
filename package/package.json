@@ -22,7 +22,8 @@
   },
   "sideEffects": false,
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./styles": "./src/base.css"
   },
   "scripts": {},
   "peerDependencies": {
