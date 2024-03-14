@@ -22,15 +22,16 @@
   },
   "sideEffects": false,
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./styles": "./src/base.css"
   },
   "scripts": {},
   "peerDependencies": {
     "astro": "^4.0.0"
   },
   "dependencies": {
-    "@tailwindcss/vite": "4.0.0-alpha.8",
-    "astro-integration-kit": "^0.5.0",
-    "tailwindcss": "4.0.0-alpha.8"
+    "@tailwindcss/vite": "4.0.0-alpha.6",
+    "astro-integration-kit": "^0.6.0",
+    "tailwindcss": "4.0.0-alpha.6"
   }
 }
